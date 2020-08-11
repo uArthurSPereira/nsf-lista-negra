@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import './consultar.css'
 import ListaNegraApi from '../../Services/ListaNegraApi'
 import LoadingBar from 'react-top-loading-bar'
 
@@ -6,7 +7,7 @@ const api = new ListaNegraApi();
 
 export default function Consultar() {
 
-    const ref = useRef(null);
+    const ref = useRef(null); 
 
     const [registros, setRegistros] = useState([])
 
@@ -23,13 +24,14 @@ export default function Consultar() {
         <div className="consultar">
 
             <LoadingBar 
-                color='#f11946' 
+                height={5}
+                color='#31E224' 
                 ref={ref} 
             />
 
             <h1>Consultar na Lista Negra</h1>
 
-            <div>
+            <div className="botao-consultar">
                 <button onClick={consultarClick}>Consultar</button>
             </div>
 

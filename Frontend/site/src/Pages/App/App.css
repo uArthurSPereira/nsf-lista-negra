@@ -1,1 +1,13 @@
+.app {
+    height: 661px;
+    width: 1366px;
+    background: linear-gradient(skyblue 20%, #FFFFFF );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.app-link .h2-app-link a{
+    color: #6C63FF;
+}

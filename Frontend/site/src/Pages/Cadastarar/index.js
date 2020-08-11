@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import './cadastrar.css';
 import ListaNegraApi from '../../Services/ListaNegraApi'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 const api = new ListaNegraApi();
 
@@ -23,25 +25,29 @@ export default function Cadastrar() {
     return (
         <div className="cadastrar">
 
-            <h1>Cadastrar na Lista Negra</h1>
+            <div className="div-title">
+                <h2 className="cadastrar-title">Cadastrar</h2>
+                <h2 className="cadastrar-title">na</h2>
+                <h2 className="cadastrar-title">Lista Negra</h2>
+            </div>
 
-            <div>
-                <label>Nome:</label>
+            <div className="text-box">
                 <input type="text" 
+                       placeholder="Nome"
                        value={nome}
                        onChange={e => setNome(e.target.value)}                    
                 />
             </div>
 
-            <div>
-                <label>Motivo:</label>
+            <div className="text-box">
                 <input type="text"
+                       placeholder="Motivo"
                        value={motivo}
                        onChange={e => setMotivo(e.target.value)}
                 />
             </div>
 
-            <div>
+            <div className="botao-cadastrar">
                 <button onClick={salvarClick}>Cadastrar</button>
             </div>
 

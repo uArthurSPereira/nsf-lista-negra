@@ -1,0 +1,34 @@
+.cadastrar {
+    height: 661px;
+    width: 1366px;
+    background: linear-gradient(#F9A826, #FFFFFF );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box input{
+    padding-left: 10px;
+    margin: 5px;
+    height: 30px;
+    width: 250px;
+    border: #F9A826 1px solid;
+}
+
+.botao-cadastrar button{
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color:#F9A826;
+    color: #FFFFFF;
+}
